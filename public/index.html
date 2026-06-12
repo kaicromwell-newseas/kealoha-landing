@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KeAloha Volleyball — Girls Tryouts 2026</title>
+<meta name="description" content="Girls junior volleyball tryouts. 55 girls committed to college since 2021. National qualifiers 4 of 6 seasons. June & July 2026 in Chesterton & Valparaiso, IN.">
+
+<!-- ============================================================
+     META PIXEL
+     The pixel ID is injected by the server from the META_PIXEL_ID
+     env var. If it's not set, the pixel simply stays inactive.
+     A "Lead" event fires on successful form submit (see bottom).
+     ============================================================ -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  window.KEALOHA_PIXEL_ID = "__META_PIXEL_ID__";
+  if (window.KEALOHA_PIXEL_ID && window.KEALOHA_PIXEL_ID.indexOf('__') !== 0) {
+    fbq('init', window.KEALOHA_PIXEL_ID);
+    fbq('track', 'PageView');
+  }
+</script>
+<!-- End Meta Pixel -->
+
+<style>
+  :root{
+    --navy:#0b2545;
+    --navy-2:#13315c;
+    --teal:#1ec8b6;
+    --coral:#ff5a4d;
+    --sand:#f6f4ef;
+    --ink:#0b2545;
+    --muted:#5b6b82;
+    --white:#ffffff;
+    --radius:16px;
+    --shadow:0 10px 30px rgba(11,37,69,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--sand);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:560px;margin:0 auto;padding:0 18px}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 100%);
+    color:var(--white);
+    padding:34px 0 30px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-60px;top:-60px;
+    width:220px;height:220px;border-radius:50%;
+    background:radial-gradient(circle,rgba(30,200,182,.35),transparent 70%);
+  }
+  .brand{
+    font-size:13px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--teal);font-weight:700;margin-bottom:14px;
+  }
+  .hero h1{
+    font-size:30px;line-height:1.12;font-weight:800;margin-bottom:12px;
+    letter-spacing:-.01em;
+  }
+  .hero h1 .accent{color:var(--teal)}
+  .hero p.sub{font-size:16px;color:#c7d4e6;max-width:440px;margin:0 auto 18px}
+
+  .cta-btn{
+    display:inline-block;background:var(--coral);color:#fff;
+    font-weight:800;font-size:17px;text-decoration:none;
+    padding:15px 30px;border-radius:50px;margin-top:18px;
+    box-shadow:0 8px 20px rgba(255,90,77,.4);transition:transform .12s ease;
+    border:none;cursor:pointer;
+  }
+  .cta-btn:active{transform:scale(.97)}
+
+  /* ---------- STATS ---------- */
+  .stats{padding:30px 0 8px}
+  .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
+  .stat{
+    background:var(--white);border-radius:var(--radius);padding:18px 14px;
+    text-align:center;box-shadow:var(--shadow);
+  }
+  .stat .num{font-size:30px;font-weight:800;color:var(--navy);line-height:1}
+  .stat .num span{color:var(--teal)}
+  .stat .lbl{font-size:12.5px;color:var(--muted);margin-top:7px;font-weight:600}
+  .section-eyebrow{
+    text-align:center;font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--coral);font-weight:800;margin-bottom:6px;
+  }
+  .section-title{text-align:center;font-size:22px;font-weight:800;margin-bottom:14px}
+
+  /* ---------- ABOUT / CLUB INFO ---------- */
+  .about{padding:30px 0 8px}
+  .info-row{
+    background:var(--white);border-radius:14px;padding:15px 16px;margin-bottom:10px;
+    box-shadow:0 4px 14px rgba(11,37,69,.07);display:flex;gap:13px;align-items:flex-start;
+  }
+  .info-row .ic{
+    flex:0 0 38px;height:38px;border-radius:10px;background:rgba(30,200,182,.14);
+    color:var(--teal);display:flex;align-items:center;justify-content:center;
+    font-size:19px;font-weight:800;
+  }
+  .info-row .tx h3{font-size:15px;font-weight:800;margin-bottom:2px}
+  .info-row .tx p{font-size:13.5px;color:var(--muted);line-height:1.45}
+
+  /* ---------- DATES ---------- */
+  .dates{padding:30px 0 8px}
+  .date-card{
+    background:var(--white);border-radius:14px;padding:14px 16px;margin-bottom:10px;
+    display:flex;align-items:center;gap:14px;box-shadow:0 4px 14px rgba(11,37,69,.07);
+    border-left:4px solid var(--teal);
+  }
+  .date-card .when{
+    flex:0 0 58px;text-align:center;background:var(--navy);color:#fff;
+    border-radius:10px;padding:8px 4px;
+  }
+  .date-card .when .mo{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--teal);font-weight:700}
+  .date-card .when .day{font-size:21px;font-weight:800;line-height:1}
+  .date-card .what{flex:1}
+  .date-card .what .grp{font-weight:800;font-size:15px}
+  .date-card .what .loc{font-size:12.5px;color:var(--muted);margin-top:2px}
+  .loc-note{font-size:12px;color:var(--muted);text-align:center;margin-top:6px}
+
+  /* ---------- FORM ---------- */
+  .form-section{padding:32px 0 44px}
+  .form-card{
+    background:var(--white);border-radius:20px;padding:24px 20px 26px;
+    box-shadow:var(--shadow);
+  }
+  .form-card h2{font-size:21px;font-weight:800;text-align:center;margin-bottom:4px}
+  .form-card .lead-in{font-size:13.5px;color:var(--muted);text-align:center;margin-bottom:18px}
+  label{display:block;font-size:13px;font-weight:700;margin:0 0 5px 2px;color:var(--navy)}
+  .field{margin-bottom:14px}
+  input,select{
+    width:100%;padding:13px 14px;font-size:16px;border:1.5px solid #d7dde6;
+    border-radius:11px;background:#fbfcfe;color:var(--ink);font-family:inherit;
+    -webkit-appearance:none;appearance:none;
+  }
+  input:focus,select:focus{outline:none;border-color:var(--teal);background:#fff}
+  .row{display:flex;gap:10px}
+  .row .field{flex:1}
+  .help{font-size:12px;color:var(--muted);margin:-2px 0 9px 2px}
+  .agegrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+  .agechip{position:relative;margin:0;display:block}
+  .agechip input{position:absolute;opacity:0;width:0;height:0}
+  .agechip span{
+    display:block;text-align:center;padding:11px 0;border:1.5px solid #d7dde6;
+    border-radius:11px;font-weight:700;font-size:15px;background:#fbfcfe;
+    cursor:pointer;transition:all .12s ease;
+  }
+  .agechip input:checked+span{background:var(--teal);border-color:var(--teal);color:#fff}
+  .agechip input:focus-visible+span{border-color:var(--teal)}
+  .submit-btn{
+    width:100%;background:var(--coral);color:#fff;font-weight:800;font-size:17px;
+    padding:16px;border:none;border-radius:50px;cursor:pointer;margin-top:6px;
+    box-shadow:0 8px 20px rgba(255,90,77,.4);transition:transform .12s ease;
+  }
+  .submit-btn:active{transform:scale(.98)}
+  .submit-btn[disabled]{opacity:.6;cursor:default}
+  .fine{font-size:11px;color:var(--muted);text-align:center;margin-top:12px;line-height:1.45}
+  .err{color:var(--coral);font-size:12px;margin-top:4px;display:none}
+  .field.invalid .err{display:block}
+  .field.invalid input,.field.invalid select{border-color:var(--coral)}
+  .form-error{display:none;color:var(--coral);font-size:13px;text-align:center;margin-top:10px;font-weight:600}
+
+  /* ---------- THANK YOU ---------- */
+  .thanks{display:none;text-align:center;padding:18px 6px}
+  .thanks .check{
+    width:64px;height:64px;border-radius:50%;background:var(--teal);
+    margin:0 auto 16px;display:flex;align-items:center;justify-content:center;
+  }
+  .thanks .check::after{
+    content:"";width:14px;height:26px;border:solid #fff;border-width:0 5px 5px 0;
+    transform:rotate(45deg);margin-top:-6px;
+  }
+  .thanks h2{font-size:22px;margin-bottom:8px}
+  .thanks p{color:var(--muted);font-size:14.5px;margin-bottom:18px}
+
+  footer{background:var(--navy);color:#8ea4c2;text-align:center;font-size:12px;padding:22px 18px}
+  footer .ft-brand{color:var(--teal);font-weight:800;letter-spacing:.18em;text-transform:uppercase;font-size:12px;margin-bottom:6px}
+</style>
+</head>
+<body>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="brand">KeAloha Volleyball &middot; Girls Club</div>
+      <h1>Your college search <span class="accent">starts here.</span></h1>
+      <p class="sub">55 of our girls have committed to play college volleyball since 2021. National qualifiers 4 of the last 6 seasons. Tryouts are open.</p>
+      <a href="#signup" class="cta-btn">Claim a Tryout Spot →</a>
+    </div>
+  </header>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="stats">
+    <div class="wrap">
+      <div class="section-eyebrow">Why KeAloha</div>
+      <h2 class="section-title">A program that produces.</h2>
+      <div class="stat-grid">
+        <div class="stat"><div class="num"><span>55</span></div><div class="lbl">Girls committed to college since 2021</div></div>
+        <div class="stat"><div class="num">4<span>/</span>6</div><div class="lbl">Seasons qualified for USAV Nationals</div></div>
+        <div class="stat"><div class="num"><span>95%</span></div><div class="lbl">Coaches played college, pro or international</div></div>
+        <div class="stat"><div class="num"><span>25</span></div><div class="lbl">Girls teams, U11–U18</div></div>
+      </div>
+      <p class="loc-note">All practice facilities in Porter County &middot; Regional teams travel within 1.5 hrs — no required hotel stays</p>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT / CLUB INFO ===================== -->
+  <section class="about">
+    <div class="wrap">
+      <div class="section-eyebrow">The Club</div>
+      <h2 class="section-title">What your daughter joins.</h2>
+
+      <div class="info-row">
+        <div class="ic">🎓</div>
+        <div class="tx"><h3>A real path to college</h3>
+        <p>98 total college commitments, 55 of them girls — with 75 of those coming since 2021 alone.</p></div>
+      </div>
+
+      <div class="info-row">
+        <div class="ic">🏆</div>
+        <div class="tx"><h3>Proven on the national stage</h3>
+        <p>Our 18-1 National team has qualified for USAV Nationals in four of six seasons. Multiple age groups qualify year after year.</p></div>
+      </div>
+
+      <div class="info-row">
+        <div class="ic">🏐</div>
+        <div class="tx"><h3>Coaching that's actually played</h3>
+        <p>95% of our coaches have played professionally, internationally, or collegiately — across 25 girls teams from U11 to U18.</p></div>
+      </div>
+
+      <div class="info-row">
+        <div class="ic">📍</div>
+        <div class="tx"><h3>Built around your schedule</h3>
+        <p>All practices in Porter County, twice weekly in season, with small-group lessons available. Regional teams stay within 1.5 hours — no required hotel stays.</p></div>
+      </div>
+
+      <div class="info-row">
+        <div class="ic">🚗</div>
+        <div class="tx"><h3>Travel that makes sense</h3>
+        <p>National & College Prep tournaments stay within a 3–4 hour radius: Chicago, Indianapolis, Louisville and Toledo. Choose the level of commitment that fits your family.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DATES ===================== -->
+  <section class="dates">
+    <div class="wrap">
+      <div class="section-eyebrow">Mark your calendar</div>
+      <h2 class="section-title">2026 Girls Tryout Dates</h2>
+
+      <div class="date-card"><div class="when"><div class="mo">Jun</div><div class="day">23</div></div><div class="what"><div class="grp">U11–U12 · All Skill Levels</div><div class="loc">6:30–9pm · Chesterton Boys &amp; Girls Club</div></div></div>
+      <div class="date-card"><div class="when"><div class="mo">Jun</div><div class="day">24</div></div><div class="what"><div class="grp">U13 · National & College Prep</div><div class="loc">6:30–9pm · Chesterton Boys &amp; Girls Club</div></div></div>
+      <div class="date-card"><div class="when"><div class="mo">Jul</div><div class="day">6</div></div><div class="what"><div class="grp">U17 & U18 · National & College Prep</div><div class="loc">6:30–9:30pm · Chesterton Boys &amp; Girls Club</div></div></div>
+      <div class="date-card"><div class="when"><div class="mo">Jul</div><div class="day">7</div></div><div class="what"><div class="grp">U16 · National & College Prep</div><div class="loc">6:30–9:30pm · Chesterton Boys &amp; Girls Club</div></div></div>
+      <div class="date-card"><div class="when"><div class="mo">Jul</div><div class="day">8</div></div><div class="what"><div class="grp">U15 · National & College Prep</div><div class="loc">6:30–9:30pm · Chesterton Boys &amp; Girls Club</div></div></div>
+      <div class="date-card"><div class="when"><div class="mo">Jul</div><div class="day">9</div></div><div class="what"><div class="grp">U13 & U14 · National & College Prep</div><div class="loc">6:30–9:30pm · Chesterton Boys &amp; Girls Club</div></div></div>
+      <div class="date-card"><div class="when"><div class="mo">Jul</div><div class="day">11</div></div><div class="what"><div class="grp">Make-Up Tryouts · U13–U18</div><div class="loc">9am–1:30pm · Valparaiso Boys &amp; Girls Club</div></div></div>
+      <div class="date-card"><div class="when"><div class="mo">Jul</div><div class="day">12</div></div><div class="what"><div class="grp">Regional Team Tryouts · U11–U18</div><div class="loc">9am–4pm · Valparaiso Boys &amp; Girls Club</div></div></div>
+    </div>
+  </section>
+
+  <!-- ===================== FORM ===================== -->
+  <section class="form-section" id="signup">
+    <div class="wrap">
+      <div class="form-card">
+
+        <form id="lead-form" novalidate>
+          <h2>Reserve your tryout spot</h2>
+          <p class="lead-in">Takes 30 seconds. We'll send you everything you need to register.</p>
+
+          <div class="field" id="ageField">
+            <label>Which age group(s) are you interested in registering for? <span style="font-weight:600;color:var(--muted)">(optional)</span></label>
+            <p class="help">Select all that apply — choose more than one if you want to register multiple players.</p>
+            <div class="agegrid">
+              <label class="agechip"><input type="checkbox" name="ageGroups" value="U11"><span>U11</span></label>
+              <label class="agechip"><input type="checkbox" name="ageGroups" value="U12"><span>U12</span></label>
+              <label class="agechip"><input type="checkbox" name="ageGroups" value="U13"><span>U13</span></label>
+              <label class="agechip"><input type="checkbox" name="ageGroups" value="U14"><span>U14</span></label>
+              <label class="agechip"><input type="checkbox" name="ageGroups" value="U15"><span>U15</span></label>
+              <label class="agechip"><input type="checkbox" name="ageGroups" value="U16"><span>U16</span></label>
+              <label class="agechip"><input type="checkbox" name="ageGroups" value="U17"><span>U17</span></label>
+              <label class="agechip"><input type="checkbox" name="ageGroups" value="U18"><span>U18</span></label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="parentName">Parent / guardian name</label>
+            <input type="text" id="parentName" name="parentName" autocomplete="name" required>
+            <div class="err">Required.</div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required>
+            <div class="err">Enter a valid email.</div>
+          </div>
+
+          <div class="field">
+            <label for="phone">Mobile phone</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required>
+            <div class="err">Enter a valid phone number.</div>
+          </div>
+
+          <button type="submit" class="submit-btn" id="submitBtn">Send Me Registration Info →</button>
+          <p class="form-error" id="formError">Something went wrong. Please try again.</p>
+          <p class="fine">By submitting, a parent/guardian consents to KeAloha Volleyball contacting you about tryouts. We never sell your information.</p>
+        </form>
+
+        <!-- THANK YOU STATE -->
+        <div class="thanks" id="thanks">
+          <div class="check"></div>
+          <h2>You're on the list! 🏐</h2>
+          <p>Check your inbox for your registration link. Taking you there now…</p>
+          <a href="#" id="reg-link" class="cta-btn">Go to Registration →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="ft-brand">KeAloha Volleyball</div>
+    Chesterton &amp; Valparaiso, Indiana · Porter County<br>
+    © 2026 KeAloha Volleyball Club
+  </footer>
+
+<script>
+  /* ============================================================
+     FORM SUBMIT HANDLER (production)
+       1. Validate client-side (name / email / phone required;
+          age groups optional).
+       2. POST to /api/lead  → server stores lead + emails them.
+       3. Fire Meta "Lead" pixel event.
+       4. Redirect to the SportsEngine registration URL.
+     ============================================================ */
+
+  // Injected by the server from REGISTRATION_URL; falls back to '#'.
+  var REGISTRATION_URL = "__REGISTRATION_URL__";
+  if (REGISTRATION_URL.indexOf('__') === 0) REGISTRATION_URL = '#';
+
+  var form = document.getElementById('lead-form');
+  var thanks = document.getElementById('thanks');
+  var submitBtn = document.getElementById('submitBtn');
+  var formError = document.getElementById('formError');
+  document.getElementById('reg-link').setAttribute('href', REGISTRATION_URL);
+
+  function setError(field, on){
+    field.closest('.field').classList.toggle('invalid', on);
+  }
+
+  function validate(){
+    var ok = true;
+    form.querySelectorAll('[required]').forEach(function(el){
+      var bad = !el.value.trim();
+      if(el.type === 'email' && el.value){
+        bad = !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value);
+      }
+      if(el.type === 'tel' && el.value){
+        var digits = el.value.replace(/\D/g,'');
+        bad = digits.length < 10 || digits.length > 11;
+      }
+      setError(el, bad);
+      if(bad) ok = false;
+    });
+    return ok;
+  }
+
+  function goToRegistration(){
+    if (REGISTRATION_URL && REGISTRATION_URL !== '#') {
+      window.location.href = REGISTRATION_URL;
+    }
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    formError.style.display = 'none';
+
+    if(!validate()){
+      form.querySelector('.field.invalid')?.scrollIntoView({behavior:'smooth',block:'center'});
+      return;
+    }
+
+    var data = {
+      parentName: form.parentName.value.trim(),
+      email: form.email.value.trim(),
+      phone: form.phone.value.trim(),
+      ageGroups: Array.prototype.slice
+        .call(form.querySelectorAll('input[name="ageGroups"]:checked'))
+        .map(function(c){ return c.value; })
+    };
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+
+    fetch('/api/lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    })
+    .then(function(r){ return r.json().then(function(j){ return { ok: r.ok, j: j }; }); })
+    .then(function(res){
+      if(!res.ok || !res.j.ok){ throw new Error(res.j.error || 'Submit failed'); }
+
+      if (window.fbq) fbq('track', 'Lead');
+
+      // success → thank-you state, then redirect
+      form.style.display = 'none';
+      thanks.style.display = 'block';
+      thanks.scrollIntoView({behavior:'smooth',block:'center'});
+      setTimeout(goToRegistration, 2500);
+    })
+    .catch(function(err){
+      console.error(err);
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Me Registration Info →';
+      formError.textContent = (err && err.message) ? err.message : 'Something went wrong. Please try again.';
+      formError.style.display = 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
