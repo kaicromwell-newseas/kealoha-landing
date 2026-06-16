@@ -326,7 +326,7 @@
         <div class="thanks" id="thanks">
           <div class="check"></div>
           <h2>Almost there — one more step! 🏐</h2>
-          <p>Please complete your registration by clicking the button below — or you'll be redirected there in a moment. <strong>You are not finished registering for KeAloha Volleyball Club tryouts yet.</strong> If you show up without completing your registration via SportsEngine, your tryout spot is not guaranteed.</p>
+          <p>Please click the button below to complete your registration in SportsEngine. <strong>You are not finished registering for KeAloha Volleyball Club tryouts yet.</strong> If you show up without completing your registration via SportsEngine, your tryout spot is not guaranteed.</p>
           <a href="#" id="reg-link" class="cta-btn">Complete Your Registration →</a>
         </div>
 
@@ -419,11 +419,10 @@
 
       if (window.fbq) fbq('track', 'Lead');
 
-      // success → thank-you state, then redirect
+      // success → thank-you state (no auto-redirect; the visitor clicks the button)
       form.style.display = 'none';
       thanks.style.display = 'block';
       thanks.scrollIntoView({behavior:'smooth',block:'center'});
-      setTimeout(goToRegistration, 2500);
     })
     .catch(function(err){
       console.error(err);
