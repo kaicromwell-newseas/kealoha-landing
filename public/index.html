@@ -417,7 +417,7 @@
     .then(function(res){
       if(!res.ok || !res.j.ok){ throw new Error(res.j.error || 'Submit failed'); }
 
-      if (window.fbq) fbq('track', 'Lead');
+      if (window.fbq) { fbq('track', 'Lead'); fbq('track', 'CompleteRegistration'); }
 
       // success → thank-you state (no auto-redirect; the visitor clicks the button)
       form.style.display = 'none';
